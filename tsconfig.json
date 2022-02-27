@@ -1,12 +1,14 @@
 {
   "compilerOptions": {
-    "module": "system",
     "noImplicitAny": true,
     "removeComments": true,
     "preserveConstEnums": true,
     "sourceMap": true,
-    "moduleResolution": "node",
-    "outDir": "dist"
+    "moduleResolution": "classic",
+    "skipLibCheck": true,
+    "outDir": "dist",
+    "module": "ES2022",
+    "target": "es6"
   },
   "include": ["src/**/*"],
   "exclude": ["src/**/*.test.ts"]

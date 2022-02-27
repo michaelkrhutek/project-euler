@@ -13,8 +13,8 @@ const fiboEvenSum = (number: number): number => {
 const getFiboNumbers = (maxNumber: number): number[] => {
   let numbers: number[] = [1, 2];
   while (numbers[numbers.length - 1] < maxNumber) {
-    const number1 = numbers[numbers.length - 1];
-    const number2 = numbers[numbers.length - 2];
+    const number1 = numbers.at(-1);
+    const number2 = numbers.at(-2);
     const newNumber = number1 + number2;
     numbers = [...numbers, newNumber];
   }
